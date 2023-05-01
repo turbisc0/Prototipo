@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box,;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.big-wrapper {
+  position: relative;
+  padding: 1,7rem 0 2rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgb(105,52,227);
+background: linear-gradient(90deg, rgba(105,52,227,1) 0%, rgba(138,97,233,1) 50%, rgba(105,52,227,1) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  max-width: 101rem;
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 0 3rem;
+  z-index: 10;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.216);
+}
+
+header .navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.links a{
+  margin-left: 4.5rem;
+  display: inline-block;
+}
+
+.links ul{
+  padding-top: 1rem;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.btn{
+  display: inline-block;
+  padding: .9rem 1.9rem;
+  color: #ffffff;
+  background-color: #8a61e9;
+  border-radius: 2rem;
+}
+
+.btn:hover {
+  border: 1px solid #8a61e9;
+}
+
+img{
+  width: 100%;
+}
+
+.navbar-brand img {
+    width: 3.5rem;
+    margin-right: .6rem;
+
+  } 
+
+.navbar-brand {
+    color: #8a61e9;
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .navbar-brand:hover {
+    color: #cbb5ff;
+  }
+
+
+/* Showcase */
+.showcase-area .container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.big-tittle {
+  font-size: 1.4rem;
+  color:white;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+.text { 
+  color: #d0d0d0;
+  font-size: 1.1rem;
+  margin: 1.9rem 0 2.5rem;
+  max-width: 600px;
+  line-height: 2.3;
+}
+
+.prog{
+  width: 35rem;
+}
+
+/* Footer */
+#footer {
+  padding: 3em 2em;
+  max-width: 101rem;
+  width: 100%;
+}
+
+#footer-top {
+  margin-bottom: 1em;
+}
+
+#footer-top,
+#footer-top i {
+  color: #000000;
+}
+
+#social-icons {
+  text-align: right;
+}
+
+#social-icons {
+  margin-right: 1em;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#social-icons i:hover {
+  color: #ab8eef;
+}
+@media screen and (max-width: 870px) {
+  .showcase-area .container{
+    grid-template-columns: 1fr;
+  }
+
+  .prog{
+    width: 100%;
+    transform: none;
+  }
+
+
+}
+
+
+
+
